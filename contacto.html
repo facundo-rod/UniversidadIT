@@ -1,36 +1,313 @@
-<!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Assest/css/styles.css">
-    <title>Contacto</title>
-</head>
+<title>Contacto</title>
+<link rel="icon" href="ico.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="icon" href="/Assets/Img/Ico/sombrero-de-graduacion.ico" type="image/ico">
+<style>
+	
+	
+     * {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+ 	font-family: "Montserrat", sans-serif;
+ 	font-optical-sizing: auto;
+ 	font-weight: 400;
+  	font-style: normal;
+	}
+     .wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-image: url("/Assets/Img/CoverBackground/5.jpg");
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 1285px;
+	}
 
-<Header>
+     .wrapper p {
+	color: white;
+	}
+     .h2 {
+	color: white;
+	width: 20%;
+	text-align: center;
+	box-shadow: 0px 0px 22px 0px rgba(255,255,255,1);
+	border: 2px solid WHITE;
+	background-color: #122c4ba6;
+	padding: 7px 0px;
+	border-radius: 15px;
+	margin: 0 40%;
+	}
+     header, section, footer {	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	}
+     header {
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 0px 0px 50px;
+	}
+     section {
+	width: 1000px;
+	}
+     footer {
+	background-color: #122c4be0;
+	width: 100%;
+	margin: 25px 0px 0px 0px;
+	}
+     footer h2 {
+	color: #c9e6ff;
+	}
+     .grid {
+	width: 998px;
+	grid-template-columns: 330px 660px; 
+	grid-template-rows: 50px 140px;
+	display: grid;
+	grid-template-areas: "header nav"
+			"header video-header";
+	gap: 0.5%;	
+	border: 2px;
+	margin: 5px 0px;
+	}
+     .contenedor-logo { 
+	grid-area: header;
+	border: 2px;
+	margin: 3px;
+	}
+     .contenedor-logo img {
+	border-radius: 50px;
+	}
+     .nav { 
+	background-color:  #122c4b;
+	grid-area: nav;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	border: 2px solid white;
+	margin: 2px;
+	box-shadow: 0px 0px 30px 0 #023e85;
+	border-radius: 10px;
+	}
+     #institucional:hover {
+	opacity: 0.5;
+	}
+     #sedes:hover {
+	opacity: 0.5;
+	}
+     #faq:hover {
+	opacity: 0.5;
+	}
+     #contacto:hover {
+	opacity: 0.5;
+	}
+     .items-nav {
+	color: white;
+	background-color: #3f7199;
+	border: 2px solid white;
+	padding: 4px;
+	border-radius: 6px;
+	}	     
+     .video-header { 
+	grid-area: video-header;
+	border: 2px solid blue;
+	margin: 4px;
+	}
+     .fondo-contacto {
+	width: 998px;
+	display: flex;
+	border-radius: 15px;
+	border: 2px solid white;
+	background-color: #122c4b;
+	margin: 30px 0px;
+	padding: 30px 0px;
+	justify-content: center;
+	}
+     .titulo-contactenos {
+	border-radius: 10px;
+	display: flex;
+	border: 2px solid white;
+	width: 95%;
+	height: 250px;
+	margin: 2px; 
+   	justify-items: center;
+	background-image: url(C:/Users/tecajasaep79/Desktop/Documentos/HTML/Proyecto/IMG/contactenos.jpg);
+	background-position: right top;
+	background-size: 100%;
+	}
+     .contactenos-titulo {
+	display: flex;
+	text-align: center;
+	font-size: 40px;
+	font-weight: 600;
+	display: flex;
+	width: 35%;
+	border: 2px;
+	padding: 5px;
+	align-items: center;
+	color: #023e85;
+	}
+	
+     .items-contacto {
+	width: 998px;
+	display: grid;
+	grid-template-columns: repeat(4, 23%);
+	gap: 1.5%;	
+  	justify-content: center;  
+   	justify-items: center;
+	border-radius: 40px;
+	border: 2px solid white;
+	margin: 40px 0px;
+	background-color: #122c4b;
+	}
+     .partes-contacto {	
+	color: #122c4b;
+	text-align: center;
+	height: 260px;
+	border-radius: 40px;
+	border: 2px solid white;
+	margin: 40px 0px;
+	background-color: white;
+	}
+     .items-contacto p {
+	color: #4cc4ff;
+	}
+     .llamada {
+	background-image: url(C:/Users/tecajasaep79/Desktop/Documentos/HTML/Proyecto/IMG/iconos/llamada.png);
+	background-size: 50%;
+	background-repeat: no-repeat;
+    	background-position: center;
+	height: 55%;
+	margin-top: 25;
+	}
+     .cv {
+	background-image: url(C:/Users/tecajasaep79/Desktop/Documentos/HTML/Proyecto/IMG/iconos/cv.png);
+	background-size: 50%;
+	background-repeat: no-repeat;
+    	background-position: center;
+	height: 55%;
+	margin-top: 25;
+	}
+     .faq-contacto {
+	background-image: url(C:/Users/tecajasaep79/Desktop/Documentos/HTML/Proyecto/IMG/iconos/faq.png);
+	background-size: 50%;
+	background-repeat: no-repeat;
+    	background-position: center;
+	height: 55%;
+	margin-top: 25;
+	}
+     .sugerencia {	
+	background-image: url(C:/Users/tecajasaep79/Desktop/Documentos/HTML/Proyecto/IMG/iconos/sugerencias.png);
+	background-size: 50%;
+	background-repeat: no-repeat;
+    	background-position: center;
+	height: 55%;
+	margin-top: 25;
+	}
+     .h2-contacto {
+	display: flex;
+	font-size: 22px;
+	font-weight: 600;
+	margin-top: 10px;
+	}
 
-    <div>
-        <h2>Universidad IT</h2>
-        <img id="Logo" src="Assest/img/Logo.png" alt="Logo Universidad">
-    </div>
+    .final-web {
+	width: 998px;
+	display: grid;
+	grid-template-columns: repeat(4, 20%);
+	gap: 1.2%;	
+	border: 1px;
+	margin: 4px 2px;
+  	justify-content: center;  
+   	justify-items: center;
+	}
+     .final-web p {
+	color: #4cc4ff;
+	}	
+     .footer1 {
+	text-align: center;
+	width: 100%;
+	height: 195px;
+	margin: 1.5%;
+	}
+     </style>
+     </head><body>
+<div class="wrapper">
+	<header>
+		<div class="grid">
+			<div class="contenedor-logo">
+				<img src="https://www.tiendaleon.com/img/cabecera.jpg" alt="Tiendaleon" width="100%" height="100%">
+			</div>
+			<div class="nav">				
+				<a class="items-nav" id="institucional" href="/Empresa.html">INSTITUCIONAL</a>
+				<a class="items-nav" id="contacto" href="/index.html"> INICIO</a> 
+				<a class="items-nav" id="sedes" href="/Sedes.html"> SEDES</a> 
+				<a class="items-nav" id="faq" href="/FAQ.html"> FAQ</a> 
+			</div>
+			<div class="video-header">
+				<div><img src="Header/LOGO YOUTUBE.jpg" alt="video" width="15%" height="15%"></div>
+			</div>
+		</div>
+	</header>
+	<section>
+		<div class="fondo-contacto">	
+			<div class="titulo-contactenos">
+				<h2 class="contactenos-titulo"> CONTACTATE CON NOSOTROS </h2>
+		</div>		
+		</div>
+		<div class="items-contacto">
+			<div class="partes-contacto">
+				<div class="llamada"></div>
+				<h2 class="h2-contacto"> Llamanos al (011) 4455-6677</h2>		
+			</div>
+			<div class="partes-contacto">
+				<div class="cv"></div>
+				<h2 class="h2-contacto">Trabaja con nosotros </h2>		
+			</div>	
+			<div class="partes-contacto">
+				<div class="faq-contacto"></div>
+				<h2 class="h2-contacto">Preguntas Frecuentes</h2>		
+			</div>
+			<div class="partes-contacto">	
+				<div class="sugerencia"></div> 
+				<a href="/Sugerencias.html"> <h2 class="h2-contacto">Sugerencias / Reclamos</h2> </a>
+			</div>		
+		</div>
+	</section>
+	<footer id="footerr">
+		<div class="final-web">
+			<div class="footer1">
+					<h2>SEDES</h2>
+					<p>Sede Martinez</p><br>
+					<p>Sede Almagro</p>
+			</div>
+			<div class="footer1">
+					<h2>EMPRESA</h2>
+					<p>Historia</p><br>
+					<p>Trabaja con nosotros</p><br>
+			</div>
+			<div class="footer1">
+					<h2>CONTACTO</h2>
+					<p>Atencion al cliente</p><br>
+					<p>(54 11) 4455-6677 </p><br>
+					<p>Lun a Vier de 8:00 a 18:00hs</p><br>
+                    <p>Reclamos/Sugerencias</p><br>
+					</div>
+			<div class="footer1">
+					<h2>UBICACION</h2>
+					<p>Maipu 2255</p><br>
+					<p> (CP) C1414 BNE</p><br>
+			</div>
+		</div>
+	</footer>
+</div>
 
-    <nav class="navbar">
-        <div> INICIO </div>
-        <div> CARRERAS </div>
-        <div> SEDES </div>
-        <div> CONTACTO </div>
-    </nav>
-
-</Header>
-
-<body>
-    
 </body>
-
-<footer>
-    
-    <p> &copy; 2024 por Equipo 15 Codo a Codo</p>
-
-</footer> 
-
 </html>

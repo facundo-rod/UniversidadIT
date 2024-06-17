@@ -1,78 +1,411 @@
-<!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Assest/css/styles.css">
-    <title>Universidad IT</title>
+<title>Universidad IT</title>
+<link rel="icon" href="ico.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="icon" href="/Assets/Img/Ico/sombrero-de-graduacion.ico" type="image/ico">
+<link rel="stylesheet" href="/Assets/Css/styles_index.css">
 </head>
 
-<Header>
-    <div>
-        <h2>Universidad IT</h2>
-        <img id="Logo" src="Assest/img/Logo.png" alt="Logo Universidad">
-    </div>
-    <nav class="navbar">
-        <div>INICIO</div>
-        <div>CARRERAS</div>
-        <div>SEDES</div>
-        <div>CONTACTO</div>
-    </nav>
-</Header>
+<style>
+	
+	
+     * {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	}
 
-<body>
+     * h1, h2, h3, p, b,a {
+ 	 font-family: "Montserrat", sans-serif;
+ 	 font-optical-sizing: auto;
+ 	 font-weight: 300;
+  	font-style: normal;
+	}
+     .wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-image: url("/Assets/Img/CoverBackground/5.jpg");
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: auto;
+	}
+     .wrapper p {
+	color: white;
+	}
+     .h31 {
+	text-align: center;
+	background: #ADD8E6;
+	border: 2px solid #1379e1;
+	padding: 4px;
+	border-radius: 10px;
+      	opacity: 0.7;
+	margin: 133 36 0px;
+	}
 
-<section class="section_1">
+     .h31:hover {
+  	opacity: 1.0;
+	}
+     .h3 {
+	text-align: center;
+	background: #FEF5E7;
+	border: 2px solid #FAD7A0;
+	padding: 4px;
+	border-radius: 10px;
+      	opacity: 0.7;
+	margin: 133 162 0px;
+	}
 
-    <div> <h2>Titulo 1</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto omnis mollitia cum distinctio nemo dolore eum maiores fuga natus fugit non, provident sapiente totam enim possimus officia consectetur veniam et.</p> 
-    </div>
-    
-    <div> <h2>Titulo 2</h2>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus enim omnis, sapiente animi ab commodi quidem placeat voluptate molestiae modi id necessitatibus suscipit provident quos eligendi debitis. Fugiat, sit quia?</p>
-    </div>
-    
-    <div> <h2>Titulo 3</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo culpa ullam sequi quibusdam atque, dolore accusamus aspernatur modi quo obcaecati? Beatae doloremque dignissimos quisquam ipsum impedit porro dolor veniam cum!</p>
-    </div>
-</section>
+     .h3:hover {
+  	opacity: 1.0;
+	}
+     .h2 {
+	text-align: center;
+	width: 19%;
+	background: #122c4be0;
+	border: 2px solid #ffffff;
+	box-shadow: 0px 0px 22px 0px rgba(255,255,255,1);
+	padding: 7px;
+	margin: 0px 42%;
+	border-radius: 10px;
+      	color: white;
+	}
 
-<section class="section_2">
-    <div> <h3>Parrafo</h3>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit velit perspiciatis quas nobis quos dolore consectetur odio quibusdam architecto impedit? Unde molestias modi aperiam, corporis autem harum quidem quam esse! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, delectus minima hic cupiditate dolorem iste sequi iusto quis. Odio et nam voluptatum cumque, blanditiis est rerum ex distinctio! Numquam, tempora!
-    Iusto excepturi maiores placeat veritatis repellendus, totam commodi. A cupiditate in dicta molestiae illum perferendis veritatis accusantium ab natus veniam incidunt repellat, maiores cum saepe earum qui. Repellendus, hic ullam.</p>
-    </div>
-</section>
+     header, section, footer {	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	}
+     header {
+	background-image: url(E:/proyecto/Gmail/HEADER-FONDO.jpg);
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 0px 0px 50px;
+	}
+     section {
+	width: 100%;
+	}
+     footer {
+	background-color: #122c4be0;
+	width: 100%;
+	margin: 25px 0px 0px 0px;
+	}
+     footer h2 {
+	color: #c9e6ff;
+	}	
+     .grid {
+	width: 998px;
+	grid-template-columns: 330px 660px; 
+	grid-template-rows: 50px 140px;
+	display: grid;
+	grid-template-areas: "header nav"
+			"header video-header";
+	gap: 0.5%;	
+	border: 2px;
+	margin: 5px 0px;
+	}
+     .contenedor-logo { 
+	grid-area: header;
+	border: 2px;
+	margin: 3px;
+	}
+     .contenedor-logo img {
+	border-radius: 50px;
+	}
+     .nav { 
+	background-color: #122c4b;
+	grid-area: nav;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	border: 2px solid white;
+	margin: 2px;
+	box-shadow: 0px 0px 30px 0 #023e85;
+	border-radius: 10px;
+	}
+     #institucional:hover {
+	opacity: 0.5;
+	}
+     #sedes:hover {
+	opacity: 0.5;
+	}
+     #faq:hover {
+	opacity: 0.5;
+	}
+     #contacto:hover {
+	opacity: 0.5;
+	}
+     #institucional {
+	color: white;
+	background-color: #3f7199;
+	border: 2px solid white;
+	padding: 4px;
+	border-radius: 6px;
+	}
+     #sedes {
+	color: white;
+	background-color: #3f7199;
+	border: 2px solid white;
+	padding: 4px;
+	border-radius: 6px;
+	}
+     #contacto {
+	color: white;
+	background-color: #3f7199;
+	border: 2px solid white;
+	padding: 4px;
+	border-radius: 6px;
+	color: white;
+	}
+     #faq {
+	color: white;
+	background-color: #3f7199;
+	border: 2px solid white;
+	padding: 4px;
+	border-radius: 6px;
+	}	     
+     .video-header { 
+	grid-area: video-header;
+	border: 2px solid blue;
+	margin: 4px;
+	}
+     .principal {
+	display: grid;
+	grid-template-columns: repeat(3, 327px);
+	grid-template-rows:  1fr 1fr 1fr;
+	grid-template-areas: "becas becas becas"
+			"sedes sedes sedes"
+			"act act act";
+	gap: 3px 6px;
+	}
+    .becas {
+	grid-area: becas;
+	border: 2px;
+	} 
+     .beca-acad {
+	display: inline-block;	
+	background-image: url("/Assets/Img/EscuelaVerano/Robotica/4.JPG");
+	background-position: center;
+	background-size: cover;
+	height: 180px;
+	width: 47.5%;
+	border: 3px solid #FF6347;
+	margin: 1%;
+	box-shadow: 0px 0px 22px 0px #FF6347;
+	border-radius: 18px;
+	}
+     .beca-acad:hover {
+	opacity: 1;
+	box-shadow: 0px 0px 22px 0px #DC143C;
+	border: 3px solid #DC143C;
+	}
+     .beca-deportiva {
+	display: inline-block;
+	background-image: url("/Assets/Img/Campamento/Escalado/8.jpg");
+	background-size: cover;
+	height: 180px;
+	width: 47.5%;
+	border: 3px solid #FF6347;
+	margin: 1%;
+	box-shadow: 0px 0px 22px 0px #FF6347;
+	border-radius: 18px;
+	}
+     .beca-deportiva:hover {
+	opacity: 1;
+	box-shadow: 0px 0px 22px 0px #DC143C;
+	border: 3px solid #DC143C;
+	}
+    .sedes {
+	grid-area: sedes;
+	border: 2px;
+	}
+     .sede1 {
+	display: inline-block;
+	background-image: url("/Assets/Img/Sede1/5.jpg");
+	background-size: 100%;
+	height: 180px;
+	width: 47.5%;
+	border: 3px solid #F0E68C;
+	margin: 1%;
+	box-shadow: 0px 0px 22px 0px #F0E68C;
+	border-radius: 18px;
+	}
+     .sede1:hover {
+	opacity: 1;
+	box-shadow: 0px 0px 22px 0px #FFD700;
+	border: 3px solid #F0E68C;
+	}
+     .sede2 {
+	display: inline-block;
+	background-image: url("/Assets/Img/Sede2/24.jpg");
+	background-size: 100%;
+	height: 180px;
+	width: 47.5%;
+	border: 3px solid #F0E68C;
+	margin: 1%;
+	box-shadow: 0px 0px 22px 0px #F0E68C;
+	border-radius: 18px;
+	}
+     .sede2:hover {
+	opacity: 1;
+	box-shadow: 0px 0px 22px 0px #FFD700;
+	border: 3px solid #F0E68C;
+	}
+    .act-extra {
+	grid-area: act;
+	border: 2px;	
+	}
+     .campamento {
+	display: inline-block;
+	background-image: url("/Assets/Img/Campamento/Arqueria/1_1.jpg");
+	background-size: 100%;
+	width: 31.5%;
+	height: 180px;
+	border: 3px solid #1E90FF;
+	margin: 0.6%;
+	box-shadow: 0px 0px 22px 0px #2857db;
+	border-radius: 18px;
+	}
+     .campamento:hover {
+	opacity: 1;
+	box-shadow: 0px 0px 22px 0px #0000FF;
+	border: 3px solid #191970;
+	}
+     .gamer{
+	display: inline-block;
+	background-image: url("/Assets/Img/EscuelaGamer/1.jpg");
+	background-size: 100%;
+	width: 31.5%;
+	height: 180px;
+	border: 3px solid #1E90FF;
+	margin: 0.6%;
+	box-shadow: 0px 0px 22px 0px #2857db;
+	border-radius: 18px;
+	}
+     .gamer:hover {
+	opacity: 1;
+	box-shadow: 0px 0px 22px 0px #0000FF;
+	border: 3px solid #191970;
+	}
+     .esc-verano {
+	display: inline-block;
+	background-image: url("/Assets/Img/EscuelaVerano/Ajedres/3.jpg");
+	background-size: 100%;
+	width: 31.5%;
+	height: 180px;
+	border: 3px solid #1E90FF;
+	margin: 0.6%;
+	box-shadow: 0px 0px 22px 0px #2857db;
+	border-radius: 18px;
+	}
+     .esc-verano:hover {
+	opacity: 1;
+	box-shadow: 0px 0px 22px 0px #0000FF;
+	border: 3px solid #191970;
+	}
+    .final-web {
+	width: 998px;
+	display: grid;
+	grid-template-columns: repeat(4, 20%);
+	grid-template-rows: 1fr;
+	grid-template-areas: "lugar1 lugar2 lugar3 lugar4";
+	gap: 1.2%;	
+	border: 1px;
+	margin: 4px 2px;
+	align-content: center;
+  	justify-content: center;
+  	align-items: center;
+   	justify-items: center;
+	}
+     .final-web p {
+	color: #4cc4ff;
+	}	
+     .footer1 {
+	text-align: center;
+	width: 100%;
+	height: 180px;
+	margin: 1.5%;
+	}
+     </style>
+     <body>
+<div class="wrapper">
+	<header>
+		<div class="grid">
+			<div class="contenedor-logo">
+				<img src="https://www.tiendaleon.com/img/cabecera.jpg" alt="Tiendaleon" width="100%" height="100%">
+			</div>
+			<div class="nav">				
+				<a id="institucional" href="/Empresa.html">INSTITUCIONAL</a>
+				<a id="contacto" href="/Contacto.html"> CONTACTO</a> 
+				<a id="sedes" href="/Sedes.html"> SEDES</a> 
+				<a id="faq" href="/FAQ.html"> FAQ</a> 
+			</div>
+			<div class="video-header">
+				<div><img src="Header/LOGO YOUTUBE.jpg" alt="video" width="15%" height="15%"></div>
+			</div>
+		</div>
+	</header>
+	<section>
+		<div class="principal">
+			<div class="becas"> 
+				<h2 class="H2"> BECAS</h2>
+					<div class="2clases">
+						<div class="beca-deportiva"><h3 class="H3">DEPORTE</h3>
+						</div>
+						<div class="beca-acad"><h3 class="H3"> ACADEMICO</h3>
+						</div>
+					</div>
+			</div>
 
-<section class="section_3">
-    <div> <h2>Titulo 1 </h2>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias enim minima placeat magni aperiam error et accusamus aut necessitatibus consequuntur voluptatibus, quam, magnam esse temporibus sed, perspiciatis nulla? Eum, perspiciatis.</p>
-    </div>
-    
-    <div> <h2>Titulo 2 </h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, sit earum unde voluptate at, possimus adipisci quae odio explicabo fugiat voluptatum ab eaque velit id quam veritatis accusamus optio consectetur.</p>
-    </div>
-</section>
+			<div class="sedes">
+				<h2 class="H2"> SEDES </h2>
+				<div class="sede1"> <h3 class="H3">SEDE 1</h3>
+				</div>
+				<div class="sede2"><h3 class="H3">SEDE 2</h3>
+				</div> 
+			</div>
+			<div class="act-extra">
+				<h2 class="H2"> ACTIVIDADES EXTRAS </h2>
+				<div class="campamento"><h3 class="H31">CAMPAMENTO</h3>
+				</div>
+				<div class="gamer"> <h3 class="H31">INSTITUCION GAMER</h3>
+				</div>
+				<div class="esc-verano"> <h3 class="H31">ESC. DE VERANO</h3>
+				</div>
 
-<section class="section_4"> 
-    <div> <h2>Titulo 1</h2>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt adipisci quia ratione sit voluptate, eaque ea similique sint obcaecati aliquam accusamus perspiciatis, laboriosam quaerat ipsa totam cum molestias vitae nostrum!0</p>
-    </div>
-    <div> <h2>Titulo 2</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt adipisci quia ratione sit voluptate, eaque ea similique sint obcaecati aliquam accusamus perspiciatis, laboriosam quaerat ipsa totam cum molestias vitae nostrum!0</p>
-    </div>
-    <div> <h2>Titulo 3</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt adipisci quia ratione sit voluptate, eaque ea similique sint obcaecati aliquam accusamus perspiciatis, laboriosam quaerat ipsa totam cum molestias vitae nostrum!0</p>
-    </div>
-
-</section>
-
-</body>
-
-<footer>
-    <div id="derechos-reservados">
-        <p> &copy; 2024 por Equipo 15 Codo a Codo</p>
-    </div>
-</footer>
-
-</html>
+			</div>
+		</div>
+	</section>
+	<footer id="footerr">
+		<div class="final-web">
+			<div class="footer1">
+					<h2>SEDES</h2>
+					<p>- Sede Martinez</p><br>
+				<p>- Sede Almagro</p>
+			</div>
+			<div class="footer1">
+					<h2>EMPRESA</h2>
+					<p>- Historia</p><br>
+					<p>- Trabaja con nosotros</p><br>
+			</div>
+			<div class="footer1">
+					<h2>CONTACTO</h2>
+					<p>- Atencion al cliente</p><br>
+					<p>(54 11) 4455-6677 </p><br>
+					<p>Lun a Vier de 8:00 a 18:00hs</p><br>
+                    <p>- Reclamos/Sugerencias</p><br>
+					</div>
+			<div class="footer1">
+					<h2>UBICACION</h2>
+					<p>Maipu 2255</p><br>
+					<p> (CP) C1414 BNE</p><br>
+			</div>
+		</div>
+	</footer>
+</div>

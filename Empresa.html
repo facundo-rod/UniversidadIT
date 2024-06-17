@@ -1,0 +1,323 @@
+<html lang="es">
+<head>
+<title>institucional</title>
+<link rel="icon" href="ico.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="icon" href="/Assets/Img/Ico/sombrero-de-graduacion.ico" type="image/ico">
+<style>
+	
+	
+     * {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	}
+
+     * h1, h2, h3, p, b,a {
+ 	 font-family: "Montserrat", sans-serif;
+ 	 font-optical-sizing: auto;
+ 	 font-weight: 300;
+  	font-style: normal;
+	}
+     .wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-image: url(C:/Users/tecajasaep79/Desktop/Documentos/HTML/Proyecto/IMG/FONDOS/fondo-universitaria.jpg);
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 1440px;
+	}
+
+     .wrapper p {
+	color: white;
+	}
+     .h2 {
+	color: white;
+	width: 20%;
+	text-align: center;
+	box-shadow: 0px 0px 22px 0px rgba(255,255,255,1);
+	border: 2px solid WHITE;
+	background-color: #122c4ba6;
+	padding: 7px 0px;
+	border-radius: 15px;
+	margin: 0 40%;
+	}
+     header, section, footer {	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	}
+     header {
+	background-image: url(E:/proyecto/Gmail/HEADER-FONDO.jpg);
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 0px 0px 50px;
+	}
+     section {
+	width: 1000px;
+	}
+     footer {
+	background-color: #122c4be0;
+	width: 100%;
+	margin: 25px 0px 0px 0px;
+	}
+     footer h2 {
+	color: #c9e6ff;
+	}
+     .grid {
+	width: 998px;
+	grid-template-columns: 330px 660px; 
+	grid-template-rows: 50px 140px;
+	display: grid;
+	grid-template-areas: "header nav"
+			"header video-header";
+	gap: 0.5%;	
+	border: 2px;
+	margin: 5px 0px;
+	}
+     .contenedor-logo { 
+	grid-area: header;
+	border: 2px;
+	margin: 3px;
+	}
+     .contenedor-logo img {
+	border-radius: 50px;
+	}
+     .nav { 
+	background-color:  #122c4b;
+	grid-area: nav;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	border: 2px solid white;
+	margin: 2px;
+	box-shadow: 0px 0px 30px 0 #023e85;
+	border-radius: 10px;
+	}
+     #institucional:hover {
+	opacity: 0.5;
+	}
+     #sedes:hover {
+	opacity: 0.5;
+	}
+     #faq:hover {
+	opacity: 0.5;
+	}
+     #contacto:hover {
+	opacity: 0.5;
+	}
+     #institucional {
+	color: white;
+	background-color: #3f7199;
+	border: 2px solid white;
+	padding: 4px;
+	border-radius: 6px;
+	}
+     #sedes {
+	color: white;
+	background-color: #3f7199;
+	border: 2px solid white;
+	padding: 7px;
+	border-radius: 10px;
+	}
+     #contacto {
+	color: white;
+	background-color: #3f7199;
+	border: 2px solid white;
+	padding: 7px;
+	border-radius: 10px;
+	}
+     #faq {
+	color: white;
+	background-color: #3f7199;
+	border: 2px solid white;
+	padding: 7px;
+	border-radius: 10px;
+	}	     
+     .video-header { 
+	grid-area: video-header;
+	border: 2px solid blue;
+	margin: 4px;
+	}
+     .logros {
+	display: grid;
+	grid-template-columns: repeat(2, 490px);
+	grid-template-rows:  1fr 1fr 1fr;
+	grid-template-areas: "logro1 logro2"
+			"logro3 logro4"
+			"logro5 logro6";
+	background-color: #f1fafbc9;
+	}
+     .lugar1 {
+
+	width: 32%;
+	text-align: center;
+	}
+     .lugar2 {
+
+	width: 32%;
+	text-align: center;
+	}
+     .lugar3 {
+
+	width: 32%;
+	text-align: center;
+	}
+     .logro1 {
+	grid-area: logro1;
+	padding: 20px 5px;
+	border-bottom: 5px solid #0037ff52;
+	border-right: 5px solid #0037ff52;
+	display: inline-flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: row;
+	}
+     .logro2 {
+	grid-area: logro2;
+	padding: 20px 5px; 
+	border-bottom: 5px solid #0037ff52;
+	display: inline-flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: row;
+	}
+     .logro3 {
+	grid-area: logro3;
+	border-bottom: 5px solid #0037ff52;
+	border-right: 5px solid #0037ff52;
+	display: inline-flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: row;
+	}
+     .logro4 {
+	grid-area: logro4;
+	border-bottom: 5px solid #0037ff52;
+	display: inline-flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: row;
+	}
+     .logro5 {
+	grid-area: logro5;
+	border-right: 5px solid #0037ff52;
+	display: inline-flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: row;
+	}
+     .logro6 {
+	grid-area: logro6;
+	display: inline-flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: row;
+	}
+/*  ------------------------------------------------------------------------------------------------------------------*/
+     .mision {
+	margin: 25 0 50px;
+	padding: 15px;
+	background-color: #091523bf;
+	border-radius: 15px;
+	border: 2px solid white;
+	}
+
+
+/*  ------------------------------------------------------------------------------------------------------------------*/
+    .final-web {
+	width: 998px;
+	display: grid;
+	grid-template-columns: repeat(4, 20%);
+	gap: 1.2%;	
+	border: 1px;
+	margin: 4px 2px;
+  	justify-content: center;
+   	justify-items: center;
+	}
+     .final-web p {
+	color: #4cc4ff;
+	}	
+     .footer1 {
+	text-align: center;
+	width: 100%;
+	margin: 1.5%;
+	}
+     </style>
+     </head>
+<body>
+<div class="wrapper">
+	<header>
+		<div class="grid">
+			<div class="contenedor-logo">
+				<img src="https://www.tiendaleon.com/img/cabecera.jpg" alt="Tiendaleon" width="100%" height="100%">
+			</div>
+			<div class="nav">				
+				<a id="institucional" href="/index.html">INICIO</a>
+				<a id="contacto" href="/Contacto.html"> CONTACTO</a> 
+				<a id="sedes" href="/Sedes.html"> SEDES</a> 
+				<a id="faq" href="/FAQ.html"> FAQ</a> 
+			</div>
+			<div class="video-header">
+				<div><img src="Header/LOGO YOUTUBE.jpg" alt="video" width="15%" height="15%"></div>
+			</div>
+		</div>
+	</header>
+	<section>
+		<h2 class="h2">Nuestra Mision</h2>
+		<div class="mision">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi malesuada tristique eros, quis cursus dui lobortis et. Donec vestibulum ex bibendum, aliquam ligula  sed,tristique eros. Nullam quis leo metus. Vestibulum laoreet suscipit tristique. Curabitur laoreet, diam ut hendrerit suscipit, risus augue scelerisque ex, sed suscipit felis augue quis arcu. Donec consectetur nibh leo, vel consequat magna lobortis sed. Suspendisse lectus tellus, tincidunt sit amet cursus ut, faucibus tristique nunc. </p><br>
+		<p>Duis nunc nulla, fringilla nec faucibus pulvinar, elementum quis purus. Donec placerat, leo non pharetra finibus, quam lectus tempus eros, vitae accumsan velit neque eget libero. Maecenas ac odio vestibulum, sodales mi quis, luctus quam. Donec viverra, sapien mattis lobortis volutpat, orci tellus pretium augue, a ultricies nisi diam in felis. In mattis tincidunt ligula, eu vehicula ex dignissim a.</p><br>
+		<p>Praesent gravida velit quis feugiat ultricies. Donec sollicitudin, justo vel maximus congue, dui urna pulvinar purus, id porttitor sem est id mi. Etiam eget aliquet erat. Sed auctor urna ut sapien fringilla vestibulum. Aenean a lorem nunc. Mauris fermentum lorem tortor, eu pretium purus bibendum nec. </p><br>
+		</div>
+		<div class="logros"> 
+			<div class="logro1"><div class="lugar1"><img src="C:/Users/tecajasaep79/Desktop/Documentos/HTML/Proyecto/IMG/iconos/calendario.png" alt="imagen de calendario" ></div><div class="lugar2"><b style="font-size: 55px;">1997</b></div><div class="lugar3"><b>INICIO DE CONCESION</b></div></div>
+			<div class="logro2"><div class="lugar1"><img src="C:/Users/tecajasaep79/Desktop/Documentos/HTML/Proyecto/IMG/iconos/estudiante.png" alt="imagen de estudiante" ></div><div class="lugar2"><b style="font-size: 55px;">81.240</b></div><div class="lugar3"><b>ESTUDIANTES EGRESADOS</b></div></div>	
+			<div class="logro3"><div class="lugar1"><img src="C:/Users/tecajasaep79/Desktop/Documentos/HTML/Proyecto/IMG/iconos/internacional.png" alt="imagen de instituto" ></div><div class="lugar2"><b style="font-size: 55px;">10</b></div><div class="lugar3"><b>INSTITUTOS EN TODO EL PAIS</b></div></div>
+			<div class="logro4"><div class="lugar1"><img src="C:/Users/tecajasaep79/Desktop/Documentos/HTML/Proyecto/IMG/iconos/profesor.png" alt="imagen de profesor" ></div><div class="lugar2"><b style="font-size: 55px;">3.740</b></div><div class="lugar3"><b>EMPLEADOS</b></div></div>
+			<div class="logro5"><div class="lugar1"><img src="C:/Users/tecajasaep79/Desktop/Documentos/HTML/Proyecto/IMG/iconos/primer-premio.png" alt="imagen de premio" ></div><div class="lugar2"><b style="font-size: 55px;">23</b></div><div class="lugar3"><b>PREMIOS A LA EDUCACION</b></div></div>
+			<div class="logro6"><div class="lugar1"><img src="C:/Users/tecajasaep79/Desktop/Documentos/HTML/Proyecto/IMG/iconos/beca.png" alt="imagen de beca" ></div><div class="lugar2"><b style="font-size: 55px;">33.970</b></div><div class="lugar3"><b>BECAS ENTREGADAS</b></div></div>
+		</div>
+	</section>
+	<footer id="footerr">
+		<div class="final-web">
+			<div class="footer1">
+					<h2>SEDES</h2>
+					<p>- Sede Martinez</p><br>
+					<p>- Sede Almagro</p>
+			</div>
+			<div class="footer1">
+					<h2>EMPRESA</h2>
+					<p>- Historia</p><br>
+					<p>- Trabaja con nosotros</p><br>
+			</div>
+			<div class="footer1">
+					<h2>CONTACTO</h2>
+					<p>- Atencion al cliente</p><br>
+					<p>(54 11) 4455-6677 </p><br>
+					<p>Lun a Vier de 8:00 a 18:00hs</p><br>
+                    <p>- Reclamos/Sugerencias</p><br>
+					</div>
+			<div class="footer1">
+					<h2>UBICACION</h2>
+					<p>Maipu 2255</p><br>
+					<p> (CP) C1414 BNE</p><br>
+			</div>
+		</div>
+	</footer>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,265 @@
+<html lang="es">
+<head>
+<title>FAQ</title>
+<link rel="icon" href="ico.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="icon" href="/Assets/Img/Ico/sombrero-de-graduacion.ico" type="image/ico">
+<style>
+	
+	
+     * {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+ 	font-family: "Montserrat", sans-serif;
+ 	font-optical-sizing: auto;
+ 	font-weight: 300;
+  	font-style: normal;
+	}
+     .wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-image: url("/Assets/Img/CoverBackground/5.jpg");
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: auto;
+	}
+
+     .wrapper p {
+	color: white;
+	}
+     .h2 {
+	color: white;
+	width: 20%;
+	text-align: center;
+	box-shadow: 0px 0px 22px 0px rgba(255,255,255,1);
+	border: 2px solid WHITE;
+	background-color: #122c4ba6;
+	padding: 7px 0px;
+	border-radius: 15px;
+	margin: 0 40%;
+	}
+     header, section, footer {	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	}
+     header {
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 0px 0px 50px;
+	}
+     section {
+	width: 1000px;
+	}
+     footer {
+	background-color: #122c4be0;
+	width: 100%;
+	margin: 25px 0px 0px 0px;
+	}
+     footer h2 {
+	color: #c9e6ff;
+	}
+     .grid {
+	width: 998px;
+	grid-template-columns: 330px 660px; 
+	grid-template-rows: 50px 140px;
+	display: grid;
+	grid-template-areas: "header nav"
+			"header video-header";
+	gap: 0.5%;	
+	border: 2px;
+	margin: 5px 0px;
+	}
+     .contenedor-logo { 
+	grid-area: header;
+	border: 2px;
+	margin: 3px;
+	}
+     .contenedor-logo img {
+	border-radius: 50px;
+	}
+     .nav { 
+	background-color:  #122c4b;
+	grid-area: nav;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	border: 2px solid white;
+	margin: 2px;
+	box-shadow: 0px 0px 30px 0 #023e85;
+	border-radius: 10px;
+	}
+     #institucional:hover {
+	opacity: 0.5;
+	}
+     #sedes:hover {
+	opacity: 0.5;
+	}
+     #faq:hover {
+	opacity: 0.5;
+	}
+     #contacto:hover {
+	opacity: 0.5;
+	}
+     .items-nav {
+	color: white;
+	background-color: #3f7199;
+	border: 2px solid white;
+	padding: 4px;
+	border-radius: 6px;
+	}	     
+     .video-header { 
+	grid-area: video-header;
+	border: 2px solid blue;
+	margin: 4px;
+	}
+     .fondo-contacto {
+	width: 998px;
+	border-radius: 10px;
+	border: 2px solid white;
+	background-color: #122c4b;
+	}
+     .preguntas-faq {	
+	color: #122c4b;
+	border-radius: 7px;
+	border: 2px solid white;
+	background-color: #76a0c1;
+	margin: 10px;
+	}
+     .preguntas-faq p {
+	color: white;
+	margin: 0px 10px 7px;
+	}
+     .preguntas-faq h2 {
+	border: 2px solid white;
+	font-size: 20px;
+	font-weight: 500;
+	margin: 4px;
+	border-radius: 6px;
+	padding-left: 7px;
+	background-color: #fb8d2e;
+	color: white;
+	}
+     .titulo-faq-h2 {
+	border: 2px solid white;
+	font-size: 25px;
+	font-weight: 600;
+	margin: 10px;
+	border-radius: 6px;
+	padding: 7px;
+	background-color: #fb8d2e;
+	text-align: center;
+	letter-spacing: 7px;
+	color: #122c4b;
+	}
+
+    .final-web {
+	width: 998px;
+	display: grid;
+	grid-template-columns: repeat(4, 20%);
+	gap: 1.2%;	
+	border: 1px;
+	margin: 4px 2px;
+  	justify-content: center;  
+   	justify-items: center;
+	}
+     .final-web p {
+	color: #4cc4ff;
+	}	
+     .footer1 {
+	text-align: center;
+	width: 100%;
+	margin: 1.5%;
+	}
+     </style>
+     </head><body>
+<div class="wrapper">
+	<header>
+		<div class="grid">
+			<div class="contenedor-logo">
+				<img src="https://www.tiendaleon.com/img/cabecera.jpg" alt="Tiendaleon" width="100%" height="100%">
+			</div>
+			<div class="nav">				
+				<a class="items-nav" id="institucional" href="/Empresa.html">INSTITUCIONAL</a>
+				<a class="items-nav" id="contacto" href="/Empresa.html"> CONTACTO</a> 
+				<a class="items-nav" id="sedes" href="/Sedes.html"> SEDES</a> 
+				<a class="items-nav" id="faq" href="/index.html"> INICIO</a> 
+			</div>
+			<div class="video-header">
+				<div><img src="Header/LOGO YOUTUBE.jpg"  width="15%" height="15%"></div>
+			</div>
+		</div>
+	</header>
+	<section>
+		<div class="fondo-contacto">	
+			<h2 class="titulo-faq-h2"> PREGUNTAS FRECUENTES </h2>
+			<div class="preguntas-faq">
+				<h2 class="pregunta">1. - ¿Cuál es la documentación que debo presentar para ingresar? </h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut interdum ligula. Donec ligula est, dictum in ornare in, mollis a urna. Pellentesque ornare est lorem, sed blandit nunc dignissim non. Nunc gravida mi sit amet ex interdum lobortis. Donec in ex eu magna sagittis.</p>
+			</div>
+			<div class="preguntas-faq">
+				<h2 class="pregunta">2. - ¿Qué documentación necesito para solicitar una beca? </h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut egestas libero et tellus laoreet rhoncus. Ut eu magna aliquet, dignissim nibh vitae, faucibus ex. Maecenas ut condimentum nibh. Aliquam quis massa faucibus, pulvinar nisl tristique, dapibus enim. Nam erat purus, rhoncus at feugiat vel, posuere at erat. Vivamus lectus metus.</p>
+			</div>
+			<div class="preguntas-faq">
+				<h2 class="pregunta">3. - ¿Debo realizar un examen para ingresar a la universidad? </h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id lorem eu elit pharetra euismod. Sed quis felis dui. Quisque eget nunc urna. Vestibulum eget sem sapien.</p>
+			</div>
+			<div class="preguntas-faq">
+				<h2 class="pregunta">4. - ¿Hay viviendas para los estudiantes en los predios de la universidad? </h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut interdum ligula. Donec ligula est, dictum in ornare in, mollis a urna. Pellentesque ornare est lorem, sed blandit nunc dignissim non. Nunc gravida mi sit amet ex interdum lobortis. Nam convallis tincidunt metus ut rutrum. Sed scelerisque ornare felis, sed malesuada mi aliquet eget. </p>
+			</div>
+			<div class="preguntas-faq">
+				<h2 class="pregunta">5. - ¿Con cuánto tiempo de anticipación tengo que inscribirme?</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut egestas libero et tellus laoreet rhoncus. Ut eu magna aliquet, dignissim nibh vitae, faucibus ex. Aliquam quis massa faucibus, pulvinar nisl tristique, dapibus enim. Nam erat purus, rhoncus at feugiat vel, posuere at erat. </p>
+			</div>
+			<div class="preguntas-faq">
+				<h2 class="pregunta">6. - ¿Cuál es mi responsabilidad como solicitante de la beca?</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id lorem eu elit pharetra euismod. Sed quis felis dui. Quisque eget nunc urna. Vestibulum eget sem sapien. Nullam ultrices sollicitudin odio. Maecenas aliquam urna quis augue fermentum finibus. Donec imperdiet enim aliquet, mattis sem at, venenatis massa. Etiam ac gravida.</p>
+			</div>
+			<div class="preguntas-faq">
+				<h2 class="pregunta">7. - ¿Cómo se abona el pago de mi beca?</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut interdum ligula. Donec ligula est, dictum in ornare in, mollis a urna. Pellentesque ornare est lorem, sed blandit nunc dignissim non. Nunc gravida mi sit amet ex interdum lobortis.</p>
+			</div>
+			<div class="preguntas-faq">
+				<h2 class="pregunta">8. - ¿Por qué motivos puede cesar mi beca?</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut egestas libero et tellus laoreet rhoncus. Ut eu magna aliquet, dignissim nibh vitae, faucibus ex. Maecenas ut condimentum nibh. Aliquam quis massa faucibus, pulvinar nisl tristique, dapibus enim. Nam erat purus, rhoncus at feugiat vel, posuere at erat. Vivamus lectus metus.</p>
+			</div>	
+		</div>
+	</section>
+	<footer id="footerr">
+		<div class="final-web">
+			<div class="footer1">
+					<h2>SEDES</h2>
+					<p>- Sede Martinez</p><br>
+					<p>- Sede Almagro</p>
+			</div>
+			<div class="footer1">
+					<h2>EMPRESA</h2>
+					<p>- Historia</p><br>
+					<p>- Trabaja con nosotros</p><br>
+			</div>
+			<div class="footer1">
+					<h2>CONTACTO</h2>
+					<p>- Atencion al cliente</p><br>
+					<p>(54 11) 4455-6677 </p><br>
+					<p>Lun a Vier de 8:00 a 18:00hs</p><br>
+                    <p>- Reclamos/Sugerencias</p><br>
+					</div>
+			<div class="footer1">
+					<h2>UBICACION</h2>
+					<p>Maipu 2255</p><br>
+					<p> (CP) C1414 BNE</p><br>
+			</div>
+		</div>
+	</footer>
+</div>
+</body>
+</html>

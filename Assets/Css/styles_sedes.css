@@ -1,0 +1,222 @@
+    * {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	}
+
+    * h1, h2, h3, p, b,a {
+ 	font-family: "Montserrat", sans-serif;
+ 	font-optical-sizing: auto;
+ 	font-weight: 300;
+  	font-style: normal;
+	}
+     
+    .wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-image: url("/assets/img/CoverBackground/5.jpg");
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: auto;
+	}
+
+    .wrapper p {
+	color: white;
+	}
+
+    .h2 {
+    color: white;
+    width: 20%;
+    text-align: center;
+    box-shadow: 0px 0px 22px 0px rgba(255,255,255,1);
+    border: 2px solid WHITE;
+    background-color: #122c4ba6;
+    padding: 7px 0px;
+    border-radius: 15px;
+    margin: 0 40%;
+    }
+    
+    header, section, footer {	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	}
+     
+    header {
+	background-image: url(E:/proyecto/Gmail/HEADER-FONDO.jpg);
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 0px 0px 50px;
+	}
+    
+    section {
+	width: 1000px;
+	}
+     
+	footer {
+	background-color: #122c4be0;
+	width: 100%;
+	margin: 25px 0px 0px 0px;
+	}
+     footer h2 {
+	color: #c9e6ff;
+	}
+     .grid {
+	width: 998px;
+	grid-template-columns: 330px 660px; 
+	grid-template-rows: 50px 140px;
+	display: grid;
+	grid-template-areas: "header nav"
+			"header video-header";
+	gap: 0.5%;	
+	border: 2px;
+	margin: 5px 0px;
+	}
+     .contenedor-logo { 
+	grid-area: header;
+	border: 2px;
+	margin: 3px;
+	}
+     .contenedor-logo img {
+	border-radius: 50px;
+	}
+    
+    .nav { 
+	background-color:  #122c4b;
+	grid-area: nav;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	border: 2px solid white;
+	margin: 2px;
+	box-shadow: 0px 0px 30px 0 #023e85;
+	border-radius: 10px;
+	}
+
+    #institucional:hover {
+    opacity: 0.5;
+    }
+    #sedes:hover {
+    opacity: 0.5;
+    }
+    #faq:hover {
+    opacity: 0.5;
+    }
+    #contacto:hover {
+    opacity: 0.5;
+    }
+    #institucional {
+    color: white;
+    background-color: #3f7199;
+    border: 2px solid white;
+    padding: 4px;
+    border-radius: 6px;
+    }
+    #sedes {
+    color: white;
+    background-color: #3f7199;
+    border: 2px solid white;
+    padding: 7px;
+    border-radius: 10px;
+    }
+    #contacto {
+    color: white;
+    background-color: #3f7199;
+    border: 2px solid white;
+    padding: 7px;
+    border-radius: 10px;
+    }
+    #faq {
+    color: white;
+    background-color: #3f7199;
+    border: 2px solid white;
+    padding: 7px;
+    border-radius: 10px;
+    }	 
+
+    .video-header { 
+    grid-area: video-header;;
+    margin: 4px;
+    }
+    
+/* ---------------------------------------------------------------------- */
+    .contenedor-sedes {
+	margin: 25 0 50px;
+	padding: 15px;
+	background-color: #091523bf;
+	border-radius: 15px;
+	border: 2px solid white;
+    padding: 15px;
+	}
+
+    .sede h3{
+    color: white;
+    justify-items: flex-start;
+    }
+
+    .h2-sedes {
+    width: auto; 
+    display: block;
+	background-color: #091523bf;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    }
+
+    .galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    max-width: auto;
+    margin: 10px;
+    padding: 10px;
+    background-color: #00014e73;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.galeria-item {
+    overflow: hidden;
+    position: relative;
+}
+
+.galeria-item img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.galeria-item:hover img {
+    transform: scale(1.1);
+}
+ .iframe {
+    display: block;
+    align-items: center;
+   
+ }
+    
+/* ---------------------------------------------------------------------- */
+    .final-web {
+    width: 998px;
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    gap: 1.2%;	
+    border: 1px;
+    margin: 4px 2px;
+    justify-content: center;
+    justify-items: center;
+    }
+        
+    .final-web p {
+    color: #4cc4ff;
+    }	
+        
+    .footer1 {
+    text-align: center;
+    width: 100%;
+    margin: 1.5%;
+    }
