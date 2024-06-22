@@ -244,7 +244,7 @@ h1 {
     }
   }
   
-  /* Pantalla tableta */
+  /* Pantalla tablet */
   @media (min-width: 768px) and (max-width: 1199px) {
     .contenedor {
       max-width: 90%;
@@ -258,9 +258,14 @@ h1 {
     .wrapper {
         max-width: 100%;
     }
+
+    .nav {
+      width: 85%;
+    }
   }
   
-  /* Pantalla móvil */
+
+  /* Pantalla movil */
   @media only screen and (max-width: 768px) {
     .contenedor-logo {
       display: none;
@@ -276,8 +281,18 @@ h1 {
     }
     .final-web {
       flex-direction: column;
+      width: 80%;
+      font-size: xx-small;
     }
     .wrapper {
         max-width: 100%;
+    }
+
+    .nav {
+      width: 50%;
+      font-size: x-small;
+      justify-items: start;
+      justify-content: space-around;
+      justify-self: start;
     }
 }

@@ -1,0 +1,171 @@
+/* Estilos base (PC de escritorio) */
+body {
+    font-family: "Montserrat", sans-serif;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: #f0f0f0;
+}
+
+.nav {
+    background-color: #122c4b;
+    grid-area: nav;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid white;
+    margin: 2px;
+    box-shadow: 0px 0px 30px 0 #023e85;
+    border-radius: 10px;
+    color: white;
+}
+
+.form-container {
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 255, 0.5);
+    border-radius: 8px;
+    width: 400px; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+    color: #0000ff;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="file"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 15%;
+    padding: 10px;
+    background-color: #0000da;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    justify-content: center;
+}
+
+button:hover {
+    background-color: #0000cc;
+}
+
+footer {
+    background-color: #122c4be0;
+    width: 100%;
+    margin: 25px 0px 0px 0px;
+}
+
+footer h2 {
+    color: #c9e6ff;
+}
+
+.grid {
+    width: 998px;
+    grid-template-columns: 330px 660px; 
+    grid-template-rows: 50px 140px;
+    display: grid;
+    grid-template-areas: "header nav";
+    gap: 0.5%;
+    border: 2px;
+    margin: 5px 0px;
+}
+
+.grid a {
+    color: white;
+}
+
+.final-web {
+    width: 998px;
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    gap: 1.2%;
+    border: 1px;
+    margin: 4px 2px;
+    justify-content: center;
+    justify-items: center;
+}
+
+.final-web p {
+    color: #4cc4ff;
+}
+
+.footer1 {
+    text-align: center;
+    width: 100%;
+    margin: 1.5%;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .grid {
+        width: 90%;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "nav";
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .form-container {
+        width: 90%;
+    }
+
+    .final-web {
+        width: 90%;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer1 {
+        margin: 10px 0;
+    }
+}
+
+/* Celular */
+@media (max-width: 480px) {
+    .grid {
+        width: 100%;
+        margin: 0;
+    }
+
+    .form-container {
+        width: 90%;
+    }
+
+    .final-web {
+        width: 90%;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .footer1 {
+        margin: 5px 0;
+    }
+}

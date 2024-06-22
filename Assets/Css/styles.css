@@ -1,0 +1,347 @@
+     * {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	}
+     .wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-image: url("/assets/img/Cover\ Background/");
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	}
+     .wrapper p {
+	color: white;
+	}
+     .h2 {
+	text-align: center;
+	width: 19%;
+	background: #ADD8E6;
+	border: 2px solid #B0C4DE;
+	padding: 7px;
+	margin: 0px 42%;
+	border-radius: 10px;
+      	opacity: 0.7;
+	}
+
+     .h2:hover {
+  	opacity: 1.0;
+	}
+     header, section, footer {	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	}
+     header {
+	background-image: url(E:/proyecto/Gmail/HEADER-FONDO.jpg);
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 0px 0px 50px;
+	}
+     section {
+	width: 100%;
+	}
+     footer {
+	background-color: white;
+	width: 100%;
+	opacity: 0.7;
+	margin: 25px 0px 0px 0px;
+	}	
+     .grid {
+	width: 998px;
+	grid-template-columns: 330px 660px; 
+	grid-template-rows: 50px 140px;
+	display: grid;
+	grid-template-areas: "header nav"
+			"header video-header";
+	gap: 0.5%;	
+	border: 2px;
+	margin: 5px 0px;
+	}
+     .contenedor-logo { 
+	grid-area: header;
+	border: 2px;
+	margin: 3px;
+	}
+     .contenedor-logo img {
+	border-radius: 50px;
+	}
+     .nav { 
+	background-color: #FFFFF0;
+	grid-area: nav;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	border: 2px solid #ADD8E6;
+	margin: 2px;
+	box-shadow: 11px 14px 8px 0 rgba(33, 68, 16, 100);
+	border-radius: 10px;
+	}
+     #institucional:hover {
+	opacity: 0.5;
+	}
+     #sedes:hover {
+	opacity: 0.5;
+	}
+     #faq:hover {
+	opacity: 0.5;
+	}
+     #contacto:hover {
+	opacity: 0.5;
+	}
+     #institucional {
+	background-color: #ADD8E6;
+	border: 2px solid #B0C4DE;
+	padding: 7px;
+	border-radius: 10px;
+	}
+     #inicio {
+	background-color: #ADD8E6;
+	border: 2px solid #B0C4DE;
+	padding: 7px;
+	border-radius: 10px;
+	}
+	#sedes {
+		background-color: #ADD8E6;
+		border: 2px solid #B0C4DE;
+		padding: 7px;
+		border-radius: 10px;
+	}
+     #contacto {
+	background-color: #ADD8E6;
+	border: 2px solid #B0C4DE;
+	padding: 7px;
+	border-radius: 10px;
+	}
+     #faq {
+	background-color: #ADD8E6;
+	border: 2px solid #B0C4DE;
+	padding: 7px;
+	border-radius: 10px;
+	}	     
+     .video-header { 
+	grid-area: video-header;
+	border: 2px solid blue;
+	margin: 4px;
+	}
+     .principal {
+	display: grid;
+	grid-template-columns: repeat(3, 327px);
+	grid-template-rows:  1fr 1fr 1fr;
+	grid-template-areas: "becas becas becas"
+			"sedes sedes sedes"
+			"act act act";
+	gap: 3px 6px;
+	}
+    .becas {
+	grid-area: becas;
+	border: 2px;
+	} 
+     .beca-acad {
+	display: inline-block;	
+	background-image: url("D:\Repos\Proyecto Gustavo\assets\img\5.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 180px;
+	width: 47.5%;
+	border: 3px solid #FF6347;
+	margin: 1%;
+	box-shadow: 0px 0px 22px 0px #FF6347;
+	border-radius: 18px;
+	}
+     .beca-acad:hover {
+	opacity: 1;
+	box-shadow: 0px 0px 22px 0px #DC143C;
+	border: 3px solid #DC143C;
+	}
+     .beca-deportiva {
+	display: inline-block;
+	background-image: url("C:/Users/tecajasaep79/Desktop/Documentos/HTML/Proyecto/IMG/deport.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 180px;
+	width: 47.5%;
+	border: 3px solid #FF6347;
+	margin: 1%;
+	box-shadow: 0px 0px 22px 0px #FF6347;
+	border-radius: 18px;
+	}
+     .beca-deportiva:hover {
+	opacity: 1;
+	box-shadow: 0px 0px 22px 0px #DC143C;
+	border: 3px solid #DC143C;
+	}
+    .sedes {
+	grid-area: sedes;
+	border: 2px;
+	}
+     .sede1 {
+	display: inline-block;
+	background-image: url("C:/Users/tecajasaep79/Desktop/Documentos/HTML/Proyecto/IMG/SEDES/2.jpg");
+	background-size: 100%;
+	height: 180px;
+	width: 47.5%;
+	border: 3px solid #F0E68C;
+	margin: 1%;
+	box-shadow: 0px 0px 22px 0px #F0E68C;
+	border-radius: 18px;
+	}
+     .sede1:hover {
+	opacity: 1;
+	box-shadow: 0px 0px 22px 0px #FFD700;
+	border: 3px solid #F0E68C;
+	}
+     .sede2 {
+	display: inline-block;
+	background-image: url("C:/Users/tecajasaep79/Desktop/Documentos/HTML/Proyecto/IMG/SEDES/21.jpg");
+	background-size: 100%;
+	height: 180px;
+	width: 47.5%;
+	border: 3px solid #F0E68C;
+	margin: 1%;
+	box-shadow: 0px 0px 22px 0px #F0E68C;
+	border-radius: 18px;
+	}
+     .sede2:hover {
+	opacity: 1;
+	box-shadow: 0px 0px 22px 0px #FFD700;
+	border: 3px solid #F0E68C;
+	}
+    .act-extra {
+	grid-area: act;
+	border: 2px;	
+	}
+     .campamento {
+	display: inline-block;
+	background-image: url("C:/Users/tecajasaep79/Desktop/Documentos/HTML/proyecto/IMG/CAMPAMENTO DE VERANO/ARQUERIA/1.jpg");
+	background-size: 100%;
+	width: 31.5%;
+	height: 180px;
+	border: 3px solid #1E90FF;
+	margin: 0.6%;
+	box-shadow: 0px 0px 22px 0px #4169E1;
+	border-radius: 18px;
+	}
+     .campamento:hover {
+	opacity: 1;
+	box-shadow: 0px 0px 22px 0px #0000FF;
+	border: 3px solid #191970;
+	}
+     .gamer{
+	display: inline-block;
+	background-image: url("C:/Users/tecajasaep79/Desktop/Documentos/HTML/Proyecto/IMG/GAMER/1.jpg");
+	background-size: 100%;
+	width: 31.5%;
+	height: 180px;
+	border: 3px solid #1E90FF;
+	margin: 0.6%;
+	box-shadow: 0px 0px 22px 0px #4169E1;
+	border-radius: 18px;
+	}
+     .gamer:hover {
+	opacity: 1;
+	box-shadow: 0px 0px 22px 0px #0000FF;
+	border: 3px solid #191970;
+	}
+     .esc-verano {
+	display: inline-block;
+	background-image: url("C:/Users/tecajasaep79/Desktop/Documentos/HTML/proyecto/IMG/Escuela de Verano/Ajedres/4.jpg");
+	background-size: 100%;
+	width: 31.5%;
+	height: 180px;
+	border: 3px solid #1E90FF;
+	margin: 0.6%;
+	box-shadow: 0px 0px 22px 0px #4169E1;
+	border-radius: 18px;
+	}
+     .esc-verano:hover {
+	opacity: 1;
+	box-shadow: 0px 0px 22px 0px #0000FF;
+	border: 3px solid #191970;
+	}
+    .final-web {
+	width: 998px;
+	display: grid;
+	grid-template-columns: repeat(4, 20%);
+	grid-template-rows: 1fr;
+	grid-template-areas: "lugar1 lugar2 lugar3 lugar4";
+	gap: 1.2%;	
+	border: 1px;
+	margin: 4px 2px;
+	align-content: center;
+  	justify-content: center;
+  	align-items: center;
+   	justify-items: center;
+	}
+     .final-web p {
+	color: #800000;
+	}	
+     .parte1 {
+	grid-area: lugar1;
+	text-align: center;
+	width: 100%;
+	height: 180px;
+	border: 2px solid blue;
+	margin: 1.5%;
+	}
+    .parte2 {
+	grid-area: lugar2;
+	text-align: center;
+	width: 100%;
+	height: 180px;
+	border: 2px solid blue;
+	margin: 1.5%;
+	}
+    .parte3 {
+	grid-area: lugar3;
+	text-align: center;
+	width: 100%;
+	height: 180px;
+	border: 2px solid blue;
+	margin: 1.5%;
+	}
+    .parte4 {
+	grid-area: lugar4;
+	text-align: center;
+	width: 100%;
+	height: 180px;
+	border: 2px solid blue;
+	margin: 1.5%;
+	}
+
+	.contenedor-sedes {
+		text-align: center;
+		width: 80%;
+		margin: 0 auto;
+	}
+	
+	.sede {
+		border: 2px solid #122c4b;
+		padding: 20px;
+		margin: 20px 0;
+		border-radius: 10px;
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+		background-color: #f9f9f9;
+	}
+	
+	.sede h3 {
+		margin-bottom: 10px;
+		color: #122c4b;
+	}
+	
+	.sede p {
+		text-align: justify;
+		color: #333;
+	}
+	
+	.H2 {
+		text-align: center;
+		margin-bottom: 20px;
+		color: #122c4b;
+	}
