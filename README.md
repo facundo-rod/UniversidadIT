@@ -1,4 +1,1 @@
-# UniversidadIT
-proyecto en costruccion
-grupo aun en preparacion
-en proceso de mejoras
+ULTIMO COMMIT; CORRECCIONES Y AGREGADOS
